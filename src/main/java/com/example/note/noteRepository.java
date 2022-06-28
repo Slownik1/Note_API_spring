@@ -7,4 +7,11 @@ import org.springframework.data.rest.core.annotation.RestResource;
 @RepositoryRestResource
 public interface noteRepository extends JpaRepository<note, Integer> {
 
+    @Override
+    @RestResource(exported = false)
+    void deleteById(Integer integer);
+
+    @Override
+    @RestResource(exported = false)
+    void deleteAllById(Iterable<? extends Integer> integers);
 }
