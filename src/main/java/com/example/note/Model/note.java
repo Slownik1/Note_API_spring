@@ -1,4 +1,4 @@
-package com.example.note;
+package com.example.note.Model;
 
 import com.sun.istack.NotNull;
 import org.hibernate.annotations.GeneratorType;
