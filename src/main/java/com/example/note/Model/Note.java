@@ -1,15 +1,11 @@
 package com.example.note.Model;
 
-import com.sun.istack.NotNull;
-import org.hibernate.annotations.GeneratorType;
-import org.springframework.context.annotation.Primary;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "NOTE")
-public class note {
+public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,7 +14,7 @@ public class note {
     private String title;
     private String note;
 
-    public note(){
+    public Note(){
     }
 
     public Integer getId() {
